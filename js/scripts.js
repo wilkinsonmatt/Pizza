@@ -82,3 +82,43 @@ currentOrder.AddPizza();
 
 
 
+$(document).ready(function () {
+  //  On clicking "start order" button:
+  //  - Hides welcome page stuff
+  //  - shows check list of toppings for pizza
+  //  - shows radio list or drop down for size
+  //  - shows a button to add pizza to order 
+  $("form#pigForm").submit(function (event) {
+    event.preventDefault();
+  
+  });
+
+  //  On clicking "Add pizza to order" button:
+  //  - runs business logic to start order to add pizza to that order
+  //  - hides previous check list, buttons, etc
+  //  - show current pizzas w/ details in que along with current cost of order
+  //  - show buttons for adding other pizza or finishing order 
+  $("form#dice1").click(function (event) {
+    event.preventDefault();
+
+  });
+
+  //  On clicking "Add another pizza" button:
+  //  - hides previous interface/buttons
+  //  - shows interface for selecting options for another pizza
+  //  - shows button to add pizza to order
+  $("form#dice2").click(function (event) {
+    event.preventDefault();
+
+  });
+
+  //  On clicking "place order" button:
+  //  - hides previous interface
+  //  - shows thank you interface 
+  //  - shows button to start another order  
+  $("form#hold").click(function (event) {
+    event.preventDefault();
+
+  });
+
+});
