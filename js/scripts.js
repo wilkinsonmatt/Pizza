@@ -1,7 +1,17 @@
+let currentOrder;
+
+
 function Order() {
   this.pizzas = [];
-  this.costOfOrder = 0;
+  this.TotalcostOfOrder = 0;
 }
+
+Order.prototype.AddPizza = function() {
+  let newpizza = new Pizza;
+  currentOrder.pizzas.push(newPizza);
+}
+
+Order.prototype.CostOfOrder(
 
 function Pizza() {
   this.size = "medium";
@@ -35,3 +45,13 @@ function costOfPizza();
   }
   return costOfPizza;
 }
+
+function makeAPizza(size, toppings){
+  
+
+}
+
+
+
+
+currentOrder = new Order();
