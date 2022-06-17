@@ -17,7 +17,7 @@ Order.prototype.AddPizza = function(pizzaSize, pizzaToppings){
 }
 
 //  Prototype adds up the total cost of all the pizzas in that order 
-Order.prototype.CostOfOrder = function(){
+Order.prototype.CostOfOrder = function()  {
   for(let i = 0; i < this.pizzas.length; i++){
     this.totalCostOfOrder += this.pizzas[i].cost;
   }
@@ -39,7 +39,7 @@ Pizza.prototype.makeAPizza = function(pizzaSize, pizzaToppings) {
 //  Prototype comes up with the cost of that pizza
 //  - Each pizza size has a base cost
 //  - adds $0.50 for each topping if they have more than 3
-Pizza.prototype.costOfPizza = function(){
+Pizza.prototype.costOfPizza = function() {
   if(this.size === "small") {
     this.cost = 5.00;
     if(this.toppings.length > 3) {
@@ -75,13 +75,13 @@ currentOrder.AddPizza();
 
 
 
-$(document).ready(function () {
+$(document).ready(function() {
   //  On clicking "start order" button:
   //  - Hides welcome page stuff
   //  - shows check list of toppings for pizza
   //  - shows radio list or drop down for size
   //  - shows a button to "add pizza to order" 
-  $("form#pigForm").submit(function (event) {
+  $("form#pigForm").submit(function(event) {
     event.preventDefault();
   
   });
@@ -91,7 +91,7 @@ $(document).ready(function () {
   //  - hides previous check list, buttons, etc
   //  - show current pizzas w/ details in que along with current cost of order
   //  - show buttons for "Adding other pizza" or "place order"
-  $("form#dice1").click(function (event) {
+  $("form#dice1").click(function(event) {
     event.preventDefault();
 
   });
@@ -100,7 +100,7 @@ $(document).ready(function () {
   //  - hides previous interface/buttons
   //  - shows interface for selecting options for another pizza
   //  - shows button to "Add pizza to order"
-  $("form#dice2").click(function (event) {
+  $("form#dice2").click(function(event) {
     event.preventDefault();
 
   });
@@ -109,14 +109,14 @@ $(document).ready(function () {
   //  - hides previous interface
   //  - shows thank you interface 
   //  - shows button to "Go back to the home page" 
-  $("form#hold").click(function (event) {
+  $("form#hold").click(function(event) {
     event.preventDefault();
 
   });
 
   //  On clicking "Go back to home page" button:
   //  - restarts the webpage resetting everything
-  $("form#hold").click(function (event) {
+  $("form#hold").click(function(event) {
     event.preventDefault();
 
   });
