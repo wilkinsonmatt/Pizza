@@ -20,38 +20,36 @@ Order.prototype.CostOfOrder = function(){
 function Pizza() {
   this.size = "medium";
   this.toppings = [];
-  this.numberOfToppings = 0;
+  this.numberOfToppings = /**/;
   this.cost = 8.00;
 }
 
+Pizza.prototype.makeAPizza(pizzaSize, pizzaToppings) = function() {
+  this.size = pizzaSize;
+  this.toppings = pizzaToppings;
+}
 
 
 Pizza.prototype.costOfPizza() = function(){
-  let costOfPizza = 0;
-
   if(/*pizza is a small*/) {
-    costOfPizza = 8.00;
+    this.cost = 8.00;
     if(/*number of toppings is more than 3*/) {
-      costOfPizza += (.5 * /*number of toppings - 3*/);
+      this.cost += (.5 * /*number of toppings - 3*/);
     }
   }else if(/*pizza is a med*/) {
-    costOfPizza = 8.00;
+    this.cost = 8.00;
     if(/*number of toppings is more than 3*/) {
-      costOfPizza += (.5 * /*number of toppings - 3*/);
+      this.cost += (.5 * /*number of toppings - 3*/);
     }
   }else if(/*pizza is a large*/) {
-    costOfPizza = 10.00;
+    this.cost = 10.00;
     if(/*number of toppings is more than 3*/) {
-      costOfPizza += (.5 * /*number of toppings - 3*/);
+      this.cost += (.5 * /*number of toppings - 3*/);
     }
   }
-  return costOfPizza;
 }
 
-function makeAPizza(size, toppings){
-  
 
-}
 
 
 pizza_options {
