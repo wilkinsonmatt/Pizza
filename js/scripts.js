@@ -31,7 +31,6 @@ Pizza.prototype.makeAPizza(pizzaSize, pizzaToppings) = function() {
   this.toppings = pizzaToppings;
 }
 
-
 Pizza.prototype.costOfPizza() = function(){
   if(/*pizza is a small*/) {
     this.cost = 8.00;
@@ -54,13 +53,23 @@ Pizza.prototype.costOfPizza() = function(){
 
 
 
+/************************ UI LOGIC **************************************/
+
 pizza_options {
   size = ["small", "medium", "large"];
   toppings = ["cheese", "pepperoni", "artichoke", "anchovy", "etc"];
 }
 
 
-
-
+//start new order button ---> goes to window with size and pizza toppings
 currentOrder = new Order();
 currentOrder.AddPizza();
+//submit button to add pizza to order
+
+//check to see if they want another pizza 
+
+//if not, show total cost of pizzas and info on pizza ordered 
+    //if time, allow pizzas to be deleted or added.
+
+
+
