@@ -24,18 +24,16 @@ function Pizza() {
   this.cost = 8.00;
 }
 
-pizza_options {
-  size = ["small", "medium", "large"];
-  toppings = ["cheese", "pepperoni", "artichoke", "anchovy", "etc"];
-}
 
-function costOfPizza();
+
+Pizza.prototype.costOfPizza() = function(){
   let costOfPizza = 0;
 
   if(/*pizza is a small*/) {
     costOfPizza = 8.00;
     if(/*number of toppings is more than 3*/) {
       costOfPizza += (.5 * /*number of toppings - 3*/);
+    }
   }else if(/*pizza is a med*/) {
     costOfPizza = 8.00;
     if(/*number of toppings is more than 3*/) {
@@ -56,6 +54,9 @@ function makeAPizza(size, toppings){
 }
 
 
-
+pizza_options {
+  size = ["small", "medium", "large"];
+  toppings = ["cheese", "pepperoni", "artichoke", "anchovy", "etc"];
+}
 
 currentOrder = new Order();
