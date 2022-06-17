@@ -8,30 +8,56 @@
   <script src="js/scripts.js"></script>
 </head>
 <body>
-<form id="pigForm">
-  <div class="start-menu">
-    <h3>Choose a size:</h3>
-    <div class="radio">
-      <label>
-        <input type="radio" name="player" value="1" checked />
-        small
-      </label>
+
+<div class="container">
+  <form id="pigForm">
+    <div class="start-menu">
+      <h3>Choose a size:</h3>
+      <div class="radio">
+        <label>
+          <input type="radio" name="player" value="small" />
+          Small
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="player" value="medium" checked />
+          Medium 
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="player" value="large" />
+          Large
+        </label>
+      </div>
+      <br/>
+      <button type="submit" class="btn btn-danger">Make a pizza</button>
     </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="player" value="2" />
-        Medium 
-      </label>
+  </form>
+</div>
+
+</br>
+
+
+
+<div class="container">
+  <h3>Toppings:</h3>
+  <p>- Choose 3 toppings. Extra toppings are $0.50 each.</p>
+  <form id="transportation_survey">
+    <div class="form-group">
+      <input type="checkbox" name="tasks-to-do" value="cheese"> Cheese<br>
+      <input type="checkbox" name="tasks-to-do" value="pepperoni"> Pepperoni<br>
+      <input type="checkbox" name="tasks-to-do" value="artichoke"> Artichoke<br>
+      <input type="checkbox" name="tasks-to-do" value="olives"> Olives<br>
+      <input type="checkbox" name="tasks-to-do" value="mushrooms"> Mushrooms<br>
+      <input type="checkbox" name="tasks-to-do" value="spinach"> Spinach<br>
+      <input type="checkbox" name="tasks-to-do" value="pineapple"> Pineapple<br>
+      <input type="checkbox" name="tasks-to-do" value="green peppers"> Green Peppers<br>
     </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="player" value="3" />
-        Large
-      </label>
-    </div>
-    <br/>
-    <button type="submit" class="btn btn-danger">Make a pizza</button>
-  </div>
-</form>
+    <button type="submit" class="btn btn-danger">Submit Survey</button>
+  </form>
+</div>
+
 </body>
 </html>
