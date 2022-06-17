@@ -3,15 +3,19 @@ let currentOrder;
 
 function Order() {
   this.pizzas = [];
-  this.TotalcostOfOrder = 0;
+  this.totalCostOfOrder = 0;
 }
 
-Order.prototype.AddPizza = function() {
+Order.prototype.AddPizza = function(){
   let newpizza = new Pizza;
-  currentOrder.pizzas.push(newPizza);
+  this.pizzas.push(newPizza);
 }
 
-Order.prototype.CostOfOrder(
+Order.prototype.CostOfOrder = function(){
+  for(let i = 0; i < /*length of this.pizzas*/; i++){
+    this.totalCostOfOrder += this.pizzas[i].cost;
+  }
+}
 
 function Pizza() {
   this.size = "medium";
