@@ -6,8 +6,10 @@ function Order() {
   this.totalCostOfOrder = 0;
 }
 
-Order.prototype.AddPizza = function(){
+Order.prototype.AddPizza = function(pizzaSize, pizzaToppings){
   let newpizza = new Pizza;
+  newpizza.makeAPizza(pizzaSize, pizzaToppings);
+  newpizza.costOfPizza();
   this.pizzas.push(newPizza);
 }
 
@@ -57,4 +59,8 @@ pizza_options {
   toppings = ["cheese", "pepperoni", "artichoke", "anchovy", "etc"];
 }
 
+
+
+
 currentOrder = new Order();
+currentOrder.AddPizza();
