@@ -69,16 +69,9 @@ const pizza_options = {
 };
 
 
-//start new order button ---> goes to window with size and pizza toppings
 
 currentOrder = new Order();
 currentOrder.AddPizza();
-//submit button to add pizza to order
-
-//check to see if they want another pizza 
-
-//if not, show total cost of pizzas and info on pizza ordered 
-    //if time, allow pizzas to be deleted or added.
 
 
 
@@ -87,7 +80,7 @@ $(document).ready(function () {
   //  - Hides welcome page stuff
   //  - shows check list of toppings for pizza
   //  - shows radio list or drop down for size
-  //  - shows a button to add pizza to order 
+  //  - shows a button to "add pizza to order" 
   $("form#pigForm").submit(function (event) {
     event.preventDefault();
   
@@ -97,7 +90,7 @@ $(document).ready(function () {
   //  - runs business logic to start order to add pizza to that order
   //  - hides previous check list, buttons, etc
   //  - show current pizzas w/ details in que along with current cost of order
-  //  - show buttons for adding other pizza or finishing order 
+  //  - show buttons for "Adding other pizza" or "place order"
   $("form#dice1").click(function (event) {
     event.preventDefault();
 
@@ -106,7 +99,7 @@ $(document).ready(function () {
   //  On clicking "Add another pizza" button:
   //  - hides previous interface/buttons
   //  - shows interface for selecting options for another pizza
-  //  - shows button to add pizza to order
+  //  - shows button to "Add pizza to order"
   $("form#dice2").click(function (event) {
     event.preventDefault();
 
@@ -115,7 +108,14 @@ $(document).ready(function () {
   //  On clicking "place order" button:
   //  - hides previous interface
   //  - shows thank you interface 
-  //  - shows button to start another order  
+  //  - shows button to "Go back to the home page" 
+  $("form#hold").click(function (event) {
+    event.preventDefault();
+
+  });
+
+  //  On clicking "Go back to home page" button:
+  //  - restarts the webpage resetting everything
   $("form#hold").click(function (event) {
     event.preventDefault();
 
