@@ -81,9 +81,16 @@ $(document).ready(function() {
   //  - shows check list of toppings for pizza
   //  - shows radio list or drop down for size
   //  - shows a button to "add pizza to order" 
-  $("form#pigForm").submit(function(event) {
+  $("form#pizzaForm").submit(function(event) {
     event.preventDefault();
-  
+    const pizzaSize = $("input:radio[name=player]:checked").val();
+    const pizzaToppings = [];
+    $("input:checkbox[name=pizza-toppings]:checked").each(function(){
+      pizzaToppings.push($(this).val());
+    });
+    
+    console.log(pizzaSize);
+    console.log(pizzaToppings);
   });
 
   //  On clicking "Add pizza to order" button:
@@ -91,9 +98,8 @@ $(document).ready(function() {
   //  - hides previous check list, buttons, etc
   //  - show current pizzas w/ details in que along with current cost of order
   //  - show buttons for "Adding other pizza" or "place order"
-  $("form#dice1").click(function(event) {
+  $("form#pigForm").submit(function(event){
     event.preventDefault();
-
   });
 
   //  On clicking "Add another pizza" button:
