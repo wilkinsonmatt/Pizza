@@ -63,19 +63,9 @@ Pizza.prototype.costOfPizza = function() {
 
 /************************ UI LOGIC **************************************/
 //all the options the customer had choose from to customize their pizza
-const pizza_options = {
-  size: ["small", "medium", "large"],
-  toppings: ["cheese", "pepperoni", "artichoke", "anchovy", "etc"],
-};
-
-
-
-currentOrder = new Order();
-currentOrder.AddPizza();
-
-
 
 $(document).ready(function() {
+
   //  On clicking "start order" button:
   //  - Hides welcome page stuff
   //  - shows check list of toppings for pizza
@@ -88,9 +78,12 @@ $(document).ready(function() {
     $("input:checkbox[name=pizza-toppings]:checked").each(function(){
       pizzaToppings.push($(this).val());
     });
-    
     console.log(pizzaSize);
     console.log(pizzaToppings);
+    currentOrder = new Order();
+    currentOrder.AddPizza(pizzaSize, pizzaToppings);
+    currentOrder.CostOfOrder();
+    console.log(currentOrder.totalCostOfOrder);
   });
 
   //  On clicking "Add pizza to order" button:

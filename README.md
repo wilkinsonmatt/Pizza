@@ -21,9 +21,50 @@
 
 ## Tests
 
+Describe: Pizza()
+
+Test: "It should return a Pizza object with two properties for toppings and size"
+Code: const myPizza = new Pizza(["anchovies", "pineapple"], "medium");
+Expected Output: Pizza { toppings: ["anchovies", "pineapple"], size: "medium" }
 
 
 
+* Describe: Order()
+
+Test: "It should return a Order object with two properties: pizzas and totalcostOfOrder"
+Code: currentOrder = new Order();
+Expected Output: Order {pizzas: [], totalcostOfOrder: 0}
+
+* Describe: Order.prototype.AddPizza  
+
+Test: "
+Code: currentOrder
+Expected Output: 
+
+
+* Describe: Order.prototype.CostOfOrder
+
+Test: 
+Code: 
+Expected Output: 
+
+* Describe: Pizza()
+
+Test: 
+Code: 
+Expected Output: 
+
+* Describe: Pizza.prototype.makeAPizza
+
+Test: 
+Code: 
+Expected Output: 
+
+* Describe: Pizza.prototype.costOfPizza
+
+Test: 
+Code: 
+Expected Output: 
 
 
 
