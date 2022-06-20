@@ -17,7 +17,7 @@ Order.prototype.AddPizza = function(pizzaSize, pizzaToppings){
 }
 
 //  Prototype adds up the total cost of all the pizzas in that order 
-Order.prototype.CostOfOrder = function()  {
+Order.prototype.CostOfOrder = function() {
   for(let i = 0; i < this.pizzas.length; i++){
     this.totalCostOfOrder += this.pizzas[i].cost;
   }
