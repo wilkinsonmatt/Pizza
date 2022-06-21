@@ -1,11 +1,10 @@
-# Portfolio
+# Pizza
 
 #### By Matt Wilkinson
 
-#### Programming Language Suggester
 
 ## Github links
-* https://wilkinsonmatt.github.io/Programming_Language_Suggester/
+* https://github.com/wilkinsonmatt/Pizza
 
 
 ## Technologies Used
@@ -13,21 +12,14 @@
 * CSS
 * HTML
 * Bootstrap
-* JS
+* JavaScript
 * Jquery
 
 ## Description
+A program that allows a user to order a pizza. The user gets to choose the size, and toppings. The cost of the pizza is determined by their choices, and added to the order where the total cost the pizzas is added up.
 
 
 ## Tests
-
-Describe: Pizza()
-
-Test: "It should return a Pizza object with two properties for toppings and size"
-Code: const myPizza = new Pizza(["anchovies", "pineapple"], "medium");
-Expected Output: Pizza { toppings: ["anchovies", "pineapple"], size: "medium" }
-
-
 
 * Describe: Order()
 Test: 
@@ -66,13 +58,17 @@ Code:
 Expected Output: 
       pizza {size: "", toppings: [], cost: 0}
 
-* Describe: Order.prototype.AddPizza
-
 * Describe: Pizza.prototype.makeAPizza
-
 Test: 
+      "It should add update the current .size and .toppings of the pizza object with the pizzaSize
 Code: 
+      let pizza1 = new Pizza;
+      let pizzaSize = "small";
+      let pizzaToppings = ["guts", "something", "gum", "nuts"];
+      pizza1.makeAPizza(pizzaSize, pizzaToppings);
+      pizza1;
 Expected Output: 
+      Pizza {size: 'small', toppings: ["guts", "something", "gum", "nuts"], cost: 0}
 
 * Describe: Pizza.prototype.costOfPizza
 
@@ -91,7 +87,7 @@ Expected Output:
 
 ## Known Bugs
 
-* N/A
+* Business logic is finished, but UI and HTML/CS still need work
 
 ## License
 
