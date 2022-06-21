@@ -71,11 +71,16 @@ Expected Output:
       Pizza {size: 'small', toppings: ["guts", "something", "gum", "nuts"], cost: 0}
 
 * Describe: Pizza.prototype.costOfPizza
-
 Test: 
+      "It should determine the cost of the pizza based on the size, and the number of toppings." 
 Code: 
+      let pizza1 = new Pizza;
+      pizza1.size = "small",
+      pizza1.toppings = ["guts", "something", "gum", "nuts"]
+      pizza1.costOfPizza();
+      pizza1.cost;
 Expected Output: 
-
+      5.5
 
 
 
