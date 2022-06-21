@@ -54,8 +54,15 @@ Expected Output:
 * Describe: Order.prototype.CostOfOrder
 
 Test: 
+      "It should add up all the pizzas in that order by adding together each pizza to order.totalCostOfOrder"
 Code: 
-Expected Output: 
+      currentOrder = new Order();
+      currentOrder.AddPizza("small", ["guts", "something", "gum", "nuts"]);
+      currentOrder.AddPizza("large", ["something", "gum"]);
+      currentOrder.CostOfOrder();
+      currentOrder.totalCostOfOrder
+Expected Output: 15.5
+      
 
 * Describe: Pizza()
 
