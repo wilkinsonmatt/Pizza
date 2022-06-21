@@ -31,21 +31,25 @@ Expected Output: Pizza { toppings: ["anchovies", "pineapple"], size: "medium" }
 
 * Describe: Order()
 
-Test: "It should return a Order object with two properties: pizzas and totalcostOfOrder"
-Code: currentOrder = new Order();
-Expected Output: Order {pizzas: [], totalcostOfOrder: 0}
+Test: 
+      "It should return a Order object with two properties: pizzas and totalcostOfOrder"
+Code: 
+      currentOrder = new Order();
+
+Expected Output: 
+      Order {pizzas: [], totalcostOfOrder: 0}
 
 * Describe: Order.prototype.AddPizza  
 
 Test: 
-      "It should add an object with two priorities to the pizzas pri·or·i·ty of order."
+      "It should add an object with two priorities to the 'pizzas' property of 'order"."
 Code: 
       currentOrder = new Order();
       currentOrder.AddPizza("small", ["guts", "something", "gum"]);
       currentOrder.pizzas
 
-Expected Output: pizzas: [("small", ["guts", "something", "gum"])]
-
+Expected Output: 
+      pizzas: [("small", ["guts", "something", "gum"])]
 
 * Describe: Order.prototype.CostOfOrder
 
@@ -70,6 +74,8 @@ Expected Output:
 Test: 
 Code: 
 Expected Output: 
+
+
 
 
 
