@@ -78,12 +78,10 @@ $(document).ready(function() {
     $("input:checkbox[name=pizza-toppings]:checked").each(function(){
       pizzaToppings.push($(this).val());
     });
-    console.log(pizzaSize);
-    console.log(pizzaToppings);
     currentOrder = new Order();
     currentOrder.AddPizza(pizzaSize, pizzaToppings);
     currentOrder.CostOfOrder();
-    console.log(currentOrder.totalCostOfOrder);
+    $(".costofpizza").html("Total cost of that Pizza: $" + currentOrder.totalCostOfOrder);
   });
 
   //  On clicking "Add pizza to order" button:
