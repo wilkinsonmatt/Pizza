@@ -14,6 +14,7 @@ Order.prototype.AddPizza = function(pizzaSize, pizzaToppings){
   newPizza.makeAPizza(pizzaSize, pizzaToppings);
   newPizza.costOfPizza();
   this.pizzas.push(newPizza);
+
 }
 
 //  Prototype adds up the total cost of all the pizzas in that order 
@@ -65,7 +66,7 @@ Pizza.prototype.costOfPizza = function() {
 //all the options the customer had choose from to customize their pizza
 
 $(document).ready(function() {
-
+  
   //  On clicking "start order" button:
   //  - Hides welcome page stuff
   //  - shows check list of toppings for pizza

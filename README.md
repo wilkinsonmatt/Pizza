@@ -12,7 +12,6 @@
 * CSS
 * HTML
 * Bootstrap
-* JavaScript
 * Jquery
 
 ## Description
